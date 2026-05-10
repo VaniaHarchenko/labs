@@ -1,0 +1,14 @@
+D:\LAB1\(OOP)LAB6\bin\Debug\net8.0\(OOP)LAB6.exe
+D:\LAB1\(OOP)LAB6\bin\Debug\net8.0\(OOP)LAB6.deps.json
+D:\LAB1\(OOP)LAB6\bin\Debug\net8.0\(OOP)LAB6.runtimeconfig.json
+D:\LAB1\(OOP)LAB6\bin\Debug\net8.0\(OOP)LAB6.dll
+D:\LAB1\(OOP)LAB6\bin\Debug\net8.0\(OOP)LAB6.pdb
+D:\LAB1\(OOP)LAB6\obj\Debug\net8.0\(OOP)LAB6.GeneratedMSBuildEditorConfig.editorconfig
+D:\LAB1\(OOP)LAB6\obj\Debug\net8.0\(OOP)LAB6.AssemblyInfoInputs.cache
+D:\LAB1\(OOP)LAB6\obj\Debug\net8.0\(OOP)LAB6.AssemblyInfo.cs
+D:\LAB1\(OOP)LAB6\obj\Debug\net8.0\(OOP)LAB6.csproj.CoreCompileInputs.cache
+D:\LAB1\(OOP)LAB6\obj\Debug\net8.0\(OOP)LAB6.dll
+D:\LAB1\(OOP)LAB6\obj\Debug\net8.0\refint\(OOP)LAB6.dll
+D:\LAB1\(OOP)LAB6\obj\Debug\net8.0\(OOP)LAB6.pdb
+D:\LAB1\(OOP)LAB6\obj\Debug\net8.0\(OOP)LAB6.genruntimeconfig.cache
+D:\LAB1\(OOP)LAB6\obj\Debug\net8.0\ref\(OOP)LAB6.dll
