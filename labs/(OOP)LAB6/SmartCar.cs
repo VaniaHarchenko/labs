@@ -1,10 +1,14 @@
-﻿using System;
+﻿using OOP6;
+using System;
+using System;
 using System.Collections.Generic;
+using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _OOP_LAB6
+namespace OOP6
 {
     // агрегація та події 
     public class SmartCar
@@ -32,7 +36,6 @@ namespace _OOP_LAB6
             Passengers = passengers ?? new List<Person>(); // агрегація (ліст пасажирів передається ззовні) (при втраті лишаються в пам'яті)
         }
 
-
         // сценарій безпеки ( перевірка водія)
         public virtual void Drive()
         {
@@ -51,7 +54,7 @@ namespace _OOP_LAB6
                 SaveToLog($"Помилка: {ex.Message}");
             }
         }
-        
+
         // голосові команди
         public void VoiceCommand(string cmd)
         {

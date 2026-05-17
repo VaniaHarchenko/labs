@@ -1,13 +1,15 @@
-﻿using System;
+﻿using OOP6;
+using System;
+using System;
+using System.Collections.Generic;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _OOP_LAB6
+namespace OOP6
 {
-
-    // Смарт душ
+    // Смарт душ (спадкування)
     public class SmartMobileShower : SmartCar
     {
         // прайват (інкапсуляція)

@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 
-namespace _OOP_LAB6
+namespace OOP6
 {
     class Program
     {
