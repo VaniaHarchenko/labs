@@ -10,7 +10,7 @@ namespace EducationalProcessModeling
 
             Console.WriteLine("=====================================================");
             Console.WriteLine(" Моделювання бізнес-процесів освітнього процесу ВНЗ ");
-            Console.WriteLine(" Версія: 4.0                                         ");
+            Console.WriteLine(" Версія: 4.0 (Реліз 4)                               "); 
             Console.WriteLine("=====================================================\n");
 
             EducationalProcess process = new EducationalProcess();
