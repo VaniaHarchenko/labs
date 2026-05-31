@@ -15,7 +15,7 @@ namespace EducationalProcessModeling
                 Console.Clear();
                 Console.WriteLine("=====================================================");
                 Console.WriteLine(" Моделювання бізнес-процесів освітнього процесу ВНЗ ");
-                Console.WriteLine(" Реліз 6                                            ");
+                Console.WriteLine(" Версія: 5.9 (Розробка Релізу 6)                     ");
                 Console.WriteLine("=====================================================");
                 Console.WriteLine("1. [Завдання 1] Форми організації навчання");
                 Console.WriteLine("2. [Завдання 2] Види занять та контролю");
@@ -25,7 +25,8 @@ namespace EducationalProcessModeling
                 Console.WriteLine("6. [Завдання 6] Підвищення кваліфікації викладачів");
                 Console.WriteLine("7. [Завдання 7] Детальні дані здобувачів освіти");
                 Console.WriteLine("8. [Завдання 8] Взаємодія учасників процесу");
-                Console.WriteLine("9. [Завдання 9] Моніторинг якості процесу (Нове!)");
+                Console.WriteLine("9. [Завдання 9] Моніторинг якості процесу");
+                Console.WriteLine("10. [Завдання 10] Сертифікація процесу (Нове!)");
                 Console.WriteLine("0. Вихід із програми");
                 Console.WriteLine("=====================================================");
                 Console.Write("Виберіть пункт меню: ");
@@ -60,6 +61,9 @@ namespace EducationalProcessModeling
                         break;
                     case "9":
                         process.ShowQualityMonitoring();
+                        break;
+                    case "10":
+                        process.ShowCertificationStatus();
                         break;
                     case "0":
                         exit = true;

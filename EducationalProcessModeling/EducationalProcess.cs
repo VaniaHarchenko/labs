@@ -134,12 +134,9 @@ namespace EducationalProcessModeling
             Console.WriteLine();
         }
 
-        // [Завдання 9] Моніторинг якості освітнього процесу
         public void ShowQualityMonitoring()
         {
             Console.WriteLine("\n=== [ЗАВДАННЯ 9] Моніторинг якості освітнього процесу ===");
-
-            // Рахуємо середній бал по всім студентам системи
             double totalSum = 0;
             int gradesCount = 0;
             foreach (var student in Students)
@@ -152,6 +149,25 @@ namespace EducationalProcessModeling
             Console.WriteLine($"[Статистика] Загальний середній бал студентів ВНЗ: {globalAverage:F1} / 100");
             Console.WriteLine($"[Моніторинг] Поточний індекс якості акредитації освітньої програми: {QualityScore}%");
             Console.WriteLine("[Результат] Попередній аудит внутрішньої системи якості: Успішно пройдено.");
+            Console.WriteLine();
+        }
+
+        // [Завдання 10] Сертифікація освітнього процесу
+        public void ShowCertificationStatus()
+        {
+            Console.WriteLine("\n=== [ЗАВДАННЯ 10] Сертифікація освітнього процесу ===");
+            Console.WriteLine("[Статус] Аналіз відповідності критеріям НАЗЯВО...");
+
+            if (QualityScore >= 90 && Teachers.Count > 0)
+            {
+                Console.WriteLine("[Вердикт] Освітня програма відповідає стандартам якості.");
+                Console.WriteLine("[Сертифікат] Статус: СЕРТИФІКОВАНО (Термін дії: 5 років).");
+            }
+            else
+            {
+                Console.WriteLine("[Вердикт] Виявлено недоліки в забезпеченні процесу.");
+                Console.WriteLine("[Сертифікат] Статус: ВІДМОВЛЕНО в сертифікації.");
+            }
             Console.WriteLine();
         }
     }
