@@ -22,6 +22,9 @@ namespace EducationalProcessModeling
             process.ShowLessonsAndControl();
             process.ShowEducationPlanning();
 
+            // Демонстрація Завдання 4 (Коміт 2)
+            process.ShowMethodologicalSupport();
+
             Console.WriteLine("=====================================================");
             Console.WriteLine("Кінець демонстрації Релізу 2. Натисніть будь-яку клавішу...");
             Console.ReadKey();

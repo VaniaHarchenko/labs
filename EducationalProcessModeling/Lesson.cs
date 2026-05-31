@@ -8,9 +8,12 @@ namespace EducationalProcessModeling
 {
     public class Lesson
     {
-        public string Title { get; set; } // Лекція, Практика, Лабораторна
-        public string ControlType { get; set; } // Іспит, Залік (для Завдання 2)
-        public string ScheduleTime { get; set; } // Для Завдання 3 (Планування)
+        public string Title { get; set; }
+        public string ControlType { get; set; }
+        public string ScheduleTime { get; set; }
+
+        // [Завдання 4] Список методичних матеріалів для заняття
+        public List<string> MethodologicalMaterials { get; set; } = new List<string>();
 
         public Lesson(string title, string controlType)
         {
