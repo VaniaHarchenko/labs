@@ -126,12 +126,32 @@ namespace EducationalProcessModeling
             Console.WriteLine();
         }
 
-        // [Завдання 8] Взаємодія учасників освітнього процесу
         public void ShowParticipantsInteraction()
         {
             Console.WriteLine("\n=== [ЗАВДАННЯ 8] Взаємодія учасників освітнього процесу ===");
             Console.WriteLine($"[Консультація] {Teachers[0].Name} провів онлайн-консультацію для групи {Students[0].Group} з курсу ВООП.");
             Console.WriteLine($"[Захист робіт] {Students[1].FullName} здав лабораторну роботу викладачу {Teachers[1].Name}. Статус: Зараховано.");
+            Console.WriteLine();
+        }
+
+        // [Завдання 9] Моніторинг якості освітнього процесу
+        public void ShowQualityMonitoring()
+        {
+            Console.WriteLine("\n=== [ЗАВДАННЯ 9] Моніторинг якості освітнього процесу ===");
+
+            // Рахуємо середній бал по всім студентам системи
+            double totalSum = 0;
+            int gradesCount = 0;
+            foreach (var student in Students)
+            {
+                totalSum += student.Grades.Sum();
+                gradesCount += student.Grades.Count;
+            }
+            double globalAverage = gradesCount > 0 ? totalSum / gradesCount : 0;
+
+            Console.WriteLine($"[Статистика] Загальний середній бал студентів ВНЗ: {globalAverage:F1} / 100");
+            Console.WriteLine($"[Моніторинг] Поточний індекс якості акредитації освітньої програми: {QualityScore}%");
+            Console.WriteLine("[Результат] Попередній аудит внутрішньої системи якості: Успішно пройдено.");
             Console.WriteLine();
         }
     }
