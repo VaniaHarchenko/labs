@@ -1,0 +1,14 @@
+D:\LAB1\2LAB(ACD)\bin\Debug\net8.0\2LAB(ACD).exe
+D:\LAB1\2LAB(ACD)\bin\Debug\net8.0\2LAB(ACD).deps.json
+D:\LAB1\2LAB(ACD)\bin\Debug\net8.0\2LAB(ACD).runtimeconfig.json
+D:\LAB1\2LAB(ACD)\bin\Debug\net8.0\2LAB(ACD).dll
+D:\LAB1\2LAB(ACD)\bin\Debug\net8.0\2LAB(ACD).pdb
+D:\LAB1\2LAB(ACD)\obj\Debug\net8.0\2LAB(ACD).GeneratedMSBuildEditorConfig.editorconfig
+D:\LAB1\2LAB(ACD)\obj\Debug\net8.0\2LAB(ACD).AssemblyInfoInputs.cache
+D:\LAB1\2LAB(ACD)\obj\Debug\net8.0\2LAB(ACD).AssemblyInfo.cs
+D:\LAB1\2LAB(ACD)\obj\Debug\net8.0\2LAB(ACD).csproj.CoreCompileInputs.cache
+D:\LAB1\2LAB(ACD)\obj\Debug\net8.0\2LAB(ACD).dll
+D:\LAB1\2LAB(ACD)\obj\Debug\net8.0\refint\2LAB(ACD).dll
+D:\LAB1\2LAB(ACD)\obj\Debug\net8.0\2LAB(ACD).pdb
+D:\LAB1\2LAB(ACD)\obj\Debug\net8.0\2LAB(ACD).genruntimeconfig.cache
+D:\LAB1\2LAB(ACD)\obj\Debug\net8.0\ref\2LAB(ACD).dll
