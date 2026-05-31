@@ -8,14 +8,15 @@ namespace EducationalProcessModeling
 {
     public class Teacher
     {
-        public string FullName { get; set; }
-        public string Position { get; set; } // Професор, доцент тощо
+        public string Name { get; set; }
         public string Department { get; set; }
 
-        public Teacher(string fullName, string position, string department)
+        // [Завдання 6] Дані про підвищення кваліфікації
+        public List<string> QualificationCourses { get; set; } = new List<string>();
+
+        public Teacher(string name, string department)
         {
-            FullName = fullName;
-            Position = position;
+            Name = name;
             Department = department;
         }
     }
