@@ -10,13 +10,26 @@ namespace EducationalProcessModeling
             EducationalProcess process = new EducationalProcess();
             bool exit = false;
 
+            // Рахуємо статистику системи для звіту сертифікації
+            int totalStudents = process.Students.Count;
+            int totalTeachers = process.Teachers.Count;
+            int totalMaterials = process.Lessons.Sum(l => l.MethodologicalMaterials.Count);
+
             while (!exit)
             {
                 Console.Clear();
                 Console.WriteLine("=====================================================");
                 Console.WriteLine(" Моделювання бізнес-процесів освітнього процесу ВНЗ ");
-                Console.WriteLine(" Версія: 5.9 (Розробка Релізу 6)                     ");
+                Console.WriteLine(" Версія: 6.0                       ");
                 Console.WriteLine("=====================================================");
+
+                // Вивід нової статистики релізу
+                Console.WriteLine($" СТАТУС СИСТЕМИ: Готова до сертифікації            ");
+                Console.WriteLine($" Завантажено здобувачів освіти: {totalStudents}                  ");
+                Console.WriteLine($" Завантажено викладачів: {totalTeachers}                         ");
+                Console.WriteLine($" Всього методичних матеріалів: {totalMaterials}                  ");
+                Console.WriteLine("=====================================================");
+
                 Console.WriteLine("1. [Завдання 1] Форми організації навчання");
                 Console.WriteLine("2. [Завдання 2] Види занять та контролю");
                 Console.WriteLine("3. [Завдання 3] Планування (Розклад)");
@@ -26,7 +39,7 @@ namespace EducationalProcessModeling
                 Console.WriteLine("7. [Завдання 7] Детальні дані здобувачів освіти");
                 Console.WriteLine("8. [Завдання 8] Взаємодія учасників процесу");
                 Console.WriteLine("9. [Завдання 9] Моніторинг якості процесу");
-                Console.WriteLine("10. [Завдання 10] Сертифікація процесу (Нове!)");
+                Console.WriteLine("10. [Завдання 10] Сертифікація процесу");
                 Console.WriteLine("0. Вихід із програми");
                 Console.WriteLine("=====================================================");
                 Console.Write("Виберіть пункт меню: ");
