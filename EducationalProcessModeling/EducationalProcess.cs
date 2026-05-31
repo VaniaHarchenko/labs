@@ -64,27 +64,27 @@ namespace EducationalProcessModeling
 
         public void ShowEducationForms()
         {
-            Console.WriteLine("=== [ЗАВДАННЯ 1] Форми організації освітнього процесу ===");
+            Console.WriteLine("\n=== [ЗАВДАННЯ 1] Форми організації освітнього процесу ===");
             foreach (var form in EducationForms) form.DisplayInfo();
         }
 
         public void ShowLessonsAndControl()
         {
-            Console.WriteLine("=== [ЗАВДАННЯ 2] Види навчальних занять і контролю ===");
+            Console.WriteLine("\n=== [ЗАВДАННЯ 2] Види навчальних занять і контролю ===");
             foreach (var lesson in Lessons) Console.WriteLine($"* Заняття: {lesson.Title} | Форма контролю: {lesson.ControlType}");
             Console.WriteLine();
         }
 
         public void ShowEducationPlanning()
         {
-            Console.WriteLine("=== [ЗАВДАННЯ 3] Планування освітнього процесу (Розклад) ===");
+            Console.WriteLine("\n=== [ЗАВДАННЯ 3] Планування освітнього процесу (Розклад) ===");
             foreach (var lesson in Lessons) Console.WriteLine($"[План] {lesson.ScheduleTime} -> {lesson.Title}");
             Console.WriteLine();
         }
 
         public void ShowMethodologicalSupport()
         {
-            Console.WriteLine("=== [ЗАВДАННЯ 4] Науково-методичне забезпечення освітнього процесу ===");
+            Console.WriteLine("\n=== [ЗАВДАННЯ 4] Науково-методичне забезпечення освітнього процесу ===");
             foreach (var lesson in Lessons)
             {
                 Console.WriteLine($"[Матеріали] Дисципліна: {lesson.Title}");
@@ -95,7 +95,7 @@ namespace EducationalProcessModeling
 
         public void ShowStudentAssessments()
         {
-            Console.WriteLine("=== [ЗАВДАННЯ 5] Оцінювання результатів навчання ===");
+            Console.WriteLine("\n=== [ЗАВДАННЯ 5] Оцінювання результатів навчання ===");
             foreach (var student in Students)
             {
                 Console.Write($"[Студент] {student.FullName} | Оцінки: {string.Join(", ", student.Grades)}");
@@ -105,10 +105,9 @@ namespace EducationalProcessModeling
             Console.WriteLine();
         }
 
-        // [Завдання 6] Вивід кваліфікації викладачів
         public void ShowTeacherQualifications()
         {
-            Console.WriteLine("=== [ЗАВДАННЯ 6] Підвищення кваліфікації працівників ===");
+            Console.WriteLine("\n=== [ЗАВДАННЯ 6] Підвищення кваліфікації працівників ===");
             foreach (var teacher in Teachers)
             {
                 Console.WriteLine($"[Викладач] {teacher.Name} ({teacher.Department})");
@@ -117,14 +116,22 @@ namespace EducationalProcessModeling
             Console.WriteLine();
         }
 
-        // [Завдання 7] Вивід детальної інформації про студентів
         public void ShowDetailedStudents()
         {
-            Console.WriteLine("=== [ЗАВДАННЯ 7] Здобувачі освіти (Студенти) ===");
+            Console.WriteLine("\n=== [ЗАВДАННЯ 7] Здобувачі освіти (Студенти) ===");
             foreach (var student in Students)
             {
                 Console.WriteLine($"[Здобувач] {student.FullName} | Спеціальність: {student.Specialty} | {student.Course}-й курс | Група: {student.Group}");
             }
+            Console.WriteLine();
+        }
+
+        // [Завдання 8] Взаємодія учасників освітнього процесу
+        public void ShowParticipantsInteraction()
+        {
+            Console.WriteLine("\n=== [ЗАВДАННЯ 8] Взаємодія учасників освітнього процесу ===");
+            Console.WriteLine($"[Консультація] {Teachers[0].Name} провів онлайн-консультацію для групи {Students[0].Group} з курсу ВООП.");
+            Console.WriteLine($"[Захист робіт] {Students[1].FullName} здав лабораторну роботу викладачу {Teachers[1].Name}. Статус: Зараховано.");
             Console.WriteLine();
         }
     }
