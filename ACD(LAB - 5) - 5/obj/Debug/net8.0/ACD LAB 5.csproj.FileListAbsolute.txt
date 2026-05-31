@@ -1,0 +1,4 @@
+D:\LAB1\ACD LAB 5\obj\Debug\net8.0\ACD LAB 5.GeneratedMSBuildEditorConfig.editorconfig
+D:\LAB1\ACD LAB 5\obj\Debug\net8.0\ACD LAB 5.AssemblyInfoInputs.cache
+D:\LAB1\ACD LAB 5\obj\Debug\net8.0\ACD LAB 5.AssemblyInfo.cs
+D:\LAB1\ACD LAB 5\obj\Debug\net8.0\ACD LAB 5.csproj.CoreCompileInputs.cache
